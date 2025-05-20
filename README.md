@@ -12,8 +12,8 @@ Zuerst manuell erstellen, dann Flux installieren:
 
 ```
 export GITHUB_TOKEN=`cat repo-pac.txt`
-export GITHUB_USER=
-export GITHUB_REPO="https://github.com/erwinntt/audi-flux2-multi-tenancy"
+export GITHUB_USER="JustasStankunas"
+export GITHUB_REPO="https://github.com/JustasStankunas/audi-flux2-multi-tenancy"
 ```
 
 Flux installieren:
@@ -25,6 +25,7 @@ Installation guide: https://fluxcd.io/flux/installation/
 
 ```
 flux bootstrap github \
+    --token-auth \
     --owner=${GITHUB_USER} \
     --repository=${GITHUB_REPO} \
     --branch=main \
@@ -38,7 +39,7 @@ flux bootstrap github \
 
 ```
 gpg --full-generate-key
-gpg --list-secret-keys fluxcdbot@users.noreply.github.com
+gpg --list-secret-keys jstankunas@litit.tech
 gpg --export-secret-keys --armor ${GPG_KEY} | kubectl create secret generic sops-gpg --namespace=flux-system --from-file=sops.asc=/dev/stdin
 ```
 

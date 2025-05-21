@@ -3,6 +3,8 @@ kind: Kustomization
 resources:
   - ../base/monitoring-team
   - ../base/dev-team
+  - ../base/error-team
 patches:
   - path: monitoring-team-patch.yaml
   - path: dev-team-patch.yaml
+  - path: error-team-patch.yaml

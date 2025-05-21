@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-    name: audi-monitoring-team
+    name: monitoring-team-auth
     namespace: monitoring
 stringData:
     password: ENC[AES256_GCM,data:uRLxt4B/+Jd0d5sOHZ0pVeM/jot3xHDsfhxN1jBUOYC5dtO5mzWB+ZF4ZSWKlvatRJOIBXNpYWzJHkhpkhhl20VwgYQ9fqgRxJ6WdmbyNbPFmA9KFAyJ67NYU3rx,iv:JqxQlZcJG3CQvIuUY4lxZkAFxqK0m5E110+3PyeFERI=,tag:LZPvwleKgi/qvh2ulbZxtw==,type:str]

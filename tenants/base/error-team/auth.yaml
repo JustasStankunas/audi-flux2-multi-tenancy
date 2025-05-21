@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Secret
 metadata:
     name: error-team-auth
-    namespace: error-team
+    namespace: monitoring
 stringData:
     password: ENC[AES256_GCM,data:H74FP4eR/AU=,iv:1e+b5f0D0O3od/lzlDpestsZ5JRI8O/yYUiVrR04HtM=,tag:QfhyR8jCmjcUsVytp8jCWA==,type:str]
     username: ENC[AES256_GCM,data:QQ70vg==,iv:ECPQCdU5ppLjuzPoNjclNkMgHN9NqXtAovDBEKpB7gk=,tag:j0CRrAyvn3hB1B2JTl1A4A==,type:str]

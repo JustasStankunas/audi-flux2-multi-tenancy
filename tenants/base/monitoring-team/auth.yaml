@@ -1,26 +1,26 @@
 apiVersion: v1
 kind: Secret
 metadata:
-    name: monitoring-team-auth
+    name: audi-monitoring-team
     namespace: monitoring
 stringData:
-    password: ENC[AES256_GCM,data:dghSO1K1sYGlLeYkAAiYIxsTXCiv4jXFOH21pCl7oacQHLrwTivdqvZozXA8+P+WqQqBI1t33j/1NGhIoPLhZz2UhtKkVHmuR4q9m+wej8Qe0f/GKr8Gp7OsNdhl,iv:vAu0ABbrS5BEvxrFh7tqPwSA1qjIvtuKB7UMB6oKHV0=,tag:dTm40GIb5xsD8b/SgHzzIQ==,type:str]
-    username: ENC[AES256_GCM,data:T7Q2893qhms=,iv:D2TPeQIebRuGXWuxgkOEnSI0tILuUXXJONwC2yi4AoA=,tag:naIxzRb9GdW3Rmt1SS19zg==,type:str]
+    password: ENC[AES256_GCM,data:uRLxt4B/+Jd0d5sOHZ0pVeM/jot3xHDsfhxN1jBUOYC5dtO5mzWB+ZF4ZSWKlvatRJOIBXNpYWzJHkhpkhhl20VwgYQ9fqgRxJ6WdmbyNbPFmA9KFAyJ67NYU3rx,iv:JqxQlZcJG3CQvIuUY4lxZkAFxqK0m5E110+3PyeFERI=,tag:LZPvwleKgi/qvh2ulbZxtw==,type:str]
+    username: ENC[AES256_GCM,data:7mIf4RCdlbe7S4G+7T7N,iv:vKIJ72XvPbueDQFb5rXZ17IBN7fAkPDpTqnuwLNPDS0=,tag:0emyXHYrm7H/OsZn7rb/gA==,type:str]
 sops:
-    lastmodified: "2025-04-09T11:29:03Z"
-    mac: ENC[AES256_GCM,data:7wSXKygfHPRP3tc/PW4J1YTp9go64XIffaDZHHKgysVRth2zZoUs9DsHmrUWilSlPK87Q3s9lWMUuiXNLOfOmXxuLlW66pKtHNNuFZhTt6d10W7coYLbzE3bJnWa8n+NRdYUz6LBGEG5kFSbAqgkTDD9CNrBDNYPLxW0zITADl8=,iv:3aNHyTwI9y7/BusQ0JrAnTs010uIWKBlGx95iE/bvSE=,tag:MSGG80rYsSeI20sOMp74yg==,type:str]
+    lastmodified: "2025-05-21T06:17:25Z"
+    mac: ENC[AES256_GCM,data:8YPtTfGlkUU+XMqSq2e62gT2XT7Vylv+B2QStzkN/rwwfPdzgJrm+m39yKt3gmls9cHK8kHcsS1ZmCAFw1IEcYSVn9JorKUmY5E1sFxeS6loFmCtaGbw+7JOrG5Rn4lwb/1IOGSm9eQHZmyi01M65E8flgYTNn3fPp20rL4Vnt4=,iv:LTfh9Rhq77Y5jSnfTzBk2muBXogyfW2xOmF5GoAFnQo=,tag:3wVGiw4+flmU4Gxwp9LTDA==,type:str]
     pgp:
-        - created_at: "2025-04-09T11:29:03Z"
+        - created_at: "2025-05-21T06:17:25Z"
           enc: |-
             -----BEGIN PGP MESSAGE-----
 
-            hF4DgZnGrWfRniUSAQdALd4E3vCD//ZBBAA9zxfOavhPeGjD5/QNSATzPY1jm0Yw
-            gVPvP+ml1sTgcwxozdHub0rzJZCYfxviCcTWZKHTGBGRmzWxFmDg9TfvDpZmHxOM
-            1GgBCQIQjx0kTwaKF0Ne740P4+mssma2EY83MGevOQvEfdwpJ0yTcTj7tvxwmGJf
-            RGG9peeH2uwQ/4EYpnL78sUk+7Dpv1VdcFFGRdPGrM9cfMA4OWAEfxyJ75q5NwL5
-            VWx6czT7Em3v8w==
-            =4I39
+            hF4DBemgfVe2OIsSAQdA90Ie/iU7O/et9TpBHt8NFrDLEPeIzZVwhRKtC6Ck3XMw
+            45hVH/K5WKditNImCVytIWRh/IkmMgLkD26bevV9daf2O/vbuxgHiw8Fizdhsl/i
+            1GgBCQIQQgJTKwAsAjxbnZ0F8Dy3NMOKlVQmrypshnx7RgGLivYzECQraEkBDyJR
+            lkiBrnRqERaldoRI/FG8e5WNPPqYT40zkKqGFuTc+ZLa9IJC5qb4lJvbCfdVBb/e
+            y7eed3scmlGCHw==
+            =zk2h
             -----END PGP MESSAGE-----
-          fp: D4F4B8950B85B1ACC1B57C32DCE318681336F060
+          fp: 15081C05643E49516954E63269CFBA1E24801075
     encrypted_regex: ^(data|stringData)$
-    version: 3.10.1
+    version: 3.10.2

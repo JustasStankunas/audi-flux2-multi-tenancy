@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    name: error-team-auth
+    namespace: error-team
+stringData:
+    password: ENC[AES256_GCM,data:H74FP4eR/AU=,iv:1e+b5f0D0O3od/lzlDpestsZ5JRI8O/yYUiVrR04HtM=,tag:QfhyR8jCmjcUsVytp8jCWA==,type:str]
+    username: ENC[AES256_GCM,data:QQ70vg==,iv:ECPQCdU5ppLjuzPoNjclNkMgHN9NqXtAovDBEKpB7gk=,tag:j0CRrAyvn3hB1B2JTl1A4A==,type:str]
+sops:
+    lastmodified: "2025-05-21T06:43:30Z"
+    mac: ENC[AES256_GCM,data:6sIhK9PItBIXm/Ef/pk/nku/IBQ+amrBDydZitlI25EN/NBSlkAGGTRc9SKup77Q6/7z3YfE4E/85k1OCif8CCKREMkOykw3mIl7Zii2/oqiL+DxO6KaQv4sG41QAal8Bfwcycdo+w8SgWB5zq6YGKndtsSy1BB/0ZKQ4yGN8oY=,iv:Emuf7tzEfPc8vfhXnv0SLAKlFmBvincb16FAW3twTYY=,tag:ggFE43LOHPiekbagboesUQ==,type:str]
+    pgp:
+        - created_at: "2025-05-21T06:43:30Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hF4DBemgfVe2OIsSAQdAWINardnsTZXJrKEYItrjUo66fQmDtXZSJfyXHxc253ww
+            OmWUYM96VY/ofUY4zKXau4TcfaPCvWg9mHVnwVh/WcloOgSK7nG3zWlb6QMy33Nz
+            1GYBCQIQzndhbJkXd3G6glCgLmMxjydNimS4N7im6/aa9dbjxG0cIHp7HSGmIBcp
+            ehT/ETlzJ7Sov/sYEoC4FWmJjtmLCTzzRStPjfG/McRlTH5w+kKIBlb8mkTgVUep
+            XYgV7ui20vs=
+            =iCwq
+            -----END PGP MESSAGE-----
+          fp: 15081C05643E49516954E63269CFBA1E24801075
+    encrypted_regex: ^(data|stringData)$
+    version: 3.10.2
